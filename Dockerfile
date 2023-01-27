@@ -1,6 +1,7 @@
 FROM php:7.2-cli
 # COPY . /usr/src/myapp
 # WORKDIR /usr/src/myapp
+RUN apt-get install php-mysql
 COPY config /config
 COPY models /models
 COPY FetchVehicles /FetchVehicles
