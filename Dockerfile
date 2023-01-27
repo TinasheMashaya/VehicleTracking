@@ -6,5 +6,5 @@ COPY models /model
 COPY FetchVehicles /FetchVehicles
 EXPOSE 8280
 # CMD [ "php", "./index.php" ]
-CMD [ "php", "-S 0.0.0.0:8280"]
+CMD [ "php", "-S localhost:8707"]
 # , "./index.php" ]
