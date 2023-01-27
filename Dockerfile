@@ -1,6 +1,5 @@
 FROM php:7.2-cli
-# COPY . /usr/src/myapp
-# WORKDIR /usr/src/myapp
+
 RUN docker-php-ext-install pdo pdo_mysql
 RUN docker-php-ext-install mysqli && docker-php-ext-enable mysqli
 COPY config /config
